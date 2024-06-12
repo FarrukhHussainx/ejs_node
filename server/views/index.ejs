@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekday Warrior</title>
+  </head>
+  <body>
+    <h1>Hey, it's <%= dayType %>,<%= advice %>!</h1>
+    <ul>
+      <% for( let index = 0; index < fruits.length; index++ ) { %>
+      <li><%= fruits[index] %></li>
+      <% } %>
+    </ul>
+    <%- include('header.ejs') %> <%- '<bold>stro</bold>' %>
+    <form action="/submit" method="POST">
+      <input type="text" name="namex" />
+      <input type="submit" value="ok" />
+    </form>
+  </body>
+</html>
